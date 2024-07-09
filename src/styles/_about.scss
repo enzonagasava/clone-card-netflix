@@ -1,0 +1,49 @@
+.about{
+    padding: 0 3em;
+
+    &__content{
+
+        &__title{
+            h3{
+                font-weight: 400;
+                margin: 48px 0 20px;
+            }
+        }
+
+        &__text{
+            display:flex;
+            flex-direction: column;
+
+            &__item{
+                margin:7px 7px 7px 0;
+                line-height: 20px;
+                display: flex;
+
+                @media (max-width:768px){
+                    display: block;
+                }
+
+
+                button{
+                    margin-left: 8px;
+                }
+
+                span{
+                    margin-left: 8px;
+                }
+
+                h4{
+                    color: #777;
+                    font-weight: 300;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 300;
+                    
+                }
+            }
+        }
+    }
+}

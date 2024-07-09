@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone-netflix</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <div class="background">
+            <div class="container">
+                <div class="container__card">
+                <section class="hero">
+                    <div class="hero__content">
+                        <div class="hero__content--banner">
+                            <img class="hero__content--banner-img"  src="./dist/images/banner_3_body_problem.webp" alt="banner_3_body_problem">
+                        </div>
+                        <div class="hero__content__item">
+                            <div class="hero__content__item__img">
+                                <img  src="./dist/images/banner_3_body_problem.webp" alt="banner_3_body_problem">
+                                <img src="./dist/images/3_body_problem_logo.webp" alt="3-body-problem-logo">    
+                            </div>
+                            <div class="hero__content__item_button">
+                                <div class="bar">
+                                    <img src="./dist/images/3_body_problem_logo.webp" alt="3-body-problem-logo">
+                                    <div class="bar__content">
+                                        <div class="bar__content__progress"></div>
+                                        <span class=" bar__content__progress__text">0 of 58m</span>    
+                                    </div>
+                                    <div class="hero__content__item__button__buttons">
+                                        <button class="button text--normal"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                                        </svg>Resume</button>
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>    
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                                            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
+                                        </svg></button>
+                                        <button class="button--circle--audio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
+                                            <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06M6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+                                        </svg></button>   
+                                    </div>    
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="model">
+                        <div class="model__content">
+                            <div class="model__content__subtitle">
+                                <ul>
+                                    <li>                    
+                                        <p class="model__content__text">2024</p>
+                                        <span class="model__content__text"> 1 Season </span>
+                                        <span class="model__content__text--button"> HD</span>
+                                        <svg class="model__content__text" fill="#bcbcbc" width="32px" height="32px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#bcbcbc" stroke-width="0.288"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m9.32 16.326h-2.28v-1.366h-3.044l-.872 1.366h-3.124l.189-.255 3.274-4.548 3.091-4.302 1.386-.006h1.38zm-2.181-6.08-.996 1.46-.995 1.464.989.019c.225 0 .434.005.605.005.033.001.072.002.111.002.106 0 .21-.004.313-.013l-.014.001c.012-.012.014-.566.006-1.483zm4.836 6.08h-1.874v-9.111h1.939c.185-.009.402-.014.621-.014.61 0 1.21.041 1.798.12l-.069-.008c1.122.267 2.027 1.024 2.49 2.028l.009.023c.338.618.537 1.354.537 2.137 0 .107-.004.213-.011.318l.001-.014c.004.072.007.157.007.243 0 .448-.069.879-.198 1.284l.008-.03c-.277 1.131-1.006 2.055-1.979 2.586l-.021.01c-.781.381-1.146.429-3.258.429zm.274-6.919v4.654l.866-.026c.994-.033 1.238-.119 1.634-.579.332-.395.534-.91.534-1.471 0-.087-.005-.173-.014-.258l.001.01c.011-.078.017-.168.017-.26 0-.308-.071-.599-.198-.858l.005.011c-.428-.921-.79-1.132-2.037-1.191l-.81-.032zm10.329 6.913c-.096 0-.141-.009-.155-.03s0-.042.01-.074c.506-1.32.803-2.846.814-4.44v-.005c-.017-1.6-.314-3.126-.844-4.537l.03.092c-.014-.035-.016-.055-.006-.07.023-.034.114-.041.357-.041.314 0 .405.024.455.124.239.654.445 1.435.581 2.239l.011.081c.107.635.168 1.366.168 2.111 0 1.419-.221 2.785-.63 4.068l.026-.095-.182.553-.416.02c-.103.002-.169.005-.219.005zm-4.232 0c-.055 0-.115 0-.195-.006l-.436-.02.234-.351c.582-.888.985-1.943 1.134-3.079l.004-.038c.028-.29.044-.626.044-.967 0-.676-.062-1.338-.182-1.98l.01.066c-.243-.984-.641-1.848-1.171-2.614l.017.026-.104-.143h.924l.176.274c.335.578.617 1.246.812 1.95l.014.061c.188.676.295 1.453.295 2.255 0 1.366-.313 2.659-.871 3.811l.023-.052c-.344.7-.4.807-.73.807zm2.024 0c-.02.002-.042.004-.065.004-.065 0-.128-.01-.187-.03l.004.001c0-.024.135-.309.195-.43.13-.26.262-.577.374-.904l.017-.056c.296-.922.466-1.983.466-3.084 0-1.497-.315-2.92-.883-4.207l.026.067c-.059-.121-.195-.405-.195-.43.056-.019.12-.03.186-.03.022 0 .043.001.064.003h-.003c.06 0 .124 0 .188.006l.436.019.247.615c.442 1.159.698 2.5.698 3.9 0 1.465-.28 2.864-.789 4.148l.027-.076-.18.453-.436.02c-.064 0-.127.005-.188.005z"></path></g></svg>
+                                        <svg class="model__content__text" fill="#bcbcbc" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.5 17.0801H15.65" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12.97 17.0801H6.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.5 13.3201H11.97" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.27 13.3201H6.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                    </li>
+                                </ul>
+                                <div div class="model__content__subtitle__18">
+                                    <button class="button--18">18</button>
+                                    <span class="text">extreme violence, drugs, sensitive themes</span>
+                                </div>
+                                    <span class="model__content__subtitle--official">It’s Official: Another Season Is Coming</span>
+                                <div class="model__content__subtitle__title" >
+                                    <span><b>S1:E7</b>"Only Advance"</span>
+                                </div>
+                                    <p class="text">A bold proposition for the Staircase Project puts the group at odds. Will weighs his options. Ye returns to a familiar place.</p>
+                                </div>
+                            <div class="model__content__link">
+                                <div>
+                                    <div class="model__content__link__item">
+                                        <span> Cast: </span>
+                                        <a href=""> Jess Hong, </a>
+                                        <a href="">Liam Cunningham,</a>
+                                        <a href="">Eiza González,</a>
+                                        <a href=""><i>more</i></a>
+                                    </div>  
+                                    <div class="model__content__link__item">
+                                        <span> Genres: </span>
+                                        <a href=""> Jess Hong, </a>
+                                        <a href="">Liam Cunningham,</a>
+                                        <a href="">Eiza González,</a>
+                                        <a href=""><i>more</i></a>
+                                    </div>    
+                                    <div class="model__content__link__item">
+                                        <span> Cast: </span>
+                                        <a href=""> Jess Hong, </a>
+                                        <a href="">Liam Cunningham,</a>
+                                        <a href="">Eiza González,</a>
+                                        <a href=""><i>more</i></a>
+                                    </div>    
+                                </div>
+                                </div>
+                            </div>
+                </section> 
+                <section class="selector">
+                    <div class="selector__header">
+                        <div class="selector__header--title">
+                            <h2>Episodes</h2>
+                        </div>
+                        <p class="text">Season 1</p>
+                    </div>
+                    <div class="selector__episode">
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>1</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>2</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>3</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>4</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>5</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>6</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content">
+                            <div class="selector__episode__content--icon">
+                                <p>7</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selector__episode__content__final">
+                            <div class="selector__episode__content--icon">
+                                <p>8</p>
+                                <img src="./dist/images/episode-1-countdown.jpg" alt="">
+                            </div>
+                            <div class="selector__episode__content__text">
+                                <div class="selector__episode__content__text--title">
+                                <h3 class="text--normal">CountDown</h3>
+                                <span>60m</span>
+                                </div>
+                                <div class="selector__episode__content__text--p">
+                                    <p class="text">Unsettling events put a group of brilliant friends on edge as a mystery unravels with origins tracing back to China during the Cultural Revolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>      
+                <section class="sugest">
+                    <div class="sugest__header">
+                        <h2>More Like This</h2>
+                    </div>
+                    <div class="sugest__content" id="content-item">
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p>Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="sugest__content__item">
+                            <div class="sugest__content__item--img">
+                                <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                            </div>
+                            <div class="sugest__content__item__card">
+                                <div class="sugest__content__item__card--icon">
+                                    <div class="sugest__content__item__card--icon-maturity">
+                                        <div class="sugest__content__item__card--icon-maturity-a16">
+                                            A16
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <p>HD</p>
+                                                <span>2020</span>
+                                            </li>
+                                        </ul>    
+                                    </div>
+                                    <div class="sugest__content__item__card--icon-add">
+                                        <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                        </svg></button>        
+                                    </div>
+                                </div>
+                                <div class="sugest__content__item__card--text">
+                                    <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                </div>    
+                            </div>
+                        </div>
+                            <div class="sugest__content__item">
+                                <div class="sugest__content__item--img">
+                                    <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                                </div>
+                                <div class="sugest__content__item__card">
+                                    <div class="sugest__content__item__card--icon">
+                                        <div class="sugest__content__item__card--icon-maturity">
+                                            <div class="sugest__content__item__card--icon-maturity-a16">
+                                                A16
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <p>HD</p>
+                                                    <span>2020</span>
+                                                </li>
+                                            </ul>    
+                                        </div>
+                                        <div class="sugest__content__item__card--icon-add">
+                                            <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                            </svg></button>        
+                                        </div>
+                                    </div>
+                                    <div class="sugest__content__item__card--text">
+                                        <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="sugest__content__item">
+                                <div class="sugest__content__item--img">
+                                    <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                                </div>
+                                <div class="sugest__content__item__card">
+                                    <div class="sugest__content__item__card--icon">
+                                        <div class="sugest__content__item__card--icon-maturity">
+                                            <div class="sugest__content__item__card--icon-maturity-a16">
+                                                A16
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <p>HD</p>
+                                                    <span>2020</span>
+                                                </li>
+                                            </ul>    
+                                        </div>
+                                        <div class="sugest__content__item__card--icon-add">
+                                            <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                            </svg></button>        
+                                        </div>
+                                    </div>
+                                    <div class="sugest__content__item__card--text">
+                                        <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="sugest__content__item">
+                                <div class="sugest__content__item--img">
+                                    <img src="./dist/images/oats_studio.webp" alt="oats_studio">
+                                </div>
+                                <div class="sugest__content__item__card">
+                                    <div class="sugest__content__item__card--icon">
+                                        <div class="sugest__content__item__card--icon-maturity">
+                                            <div class="sugest__content__item__card--icon-maturity-a16">
+                                                A16
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <p>HD</p>
+                                                    <span>2020</span>
+                                                </li>
+                                            </ul>    
+                                        </div>
+                                        <div class="sugest__content__item__card--icon-add">
+                                            <button class="button--circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                            </svg></button>        
+                                        </div>
+                                    </div>
+                                    <div class="sugest__content__item__card--text">
+                                        <p class="text">Director Neill Blomkamp produces a series of experimental short films that envision post-apocalyptic worlds and nightmarish scenarios.</p>
+                                    </div>    
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sugest__arrow " data-sugest-button>
+                        <svg id="svg"  xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                        </svg>
+                        <svg id='svgUp' class="svgUp"  xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                        </svg>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="about__content">
+                        <div class="about__content__title">
+                            <h3 class="title">About <b>3 Body Problem</b></h3>
+                        </div>
+                        <div class="about__content__text">
+                                <div class="about__content__text__item">
+                                    <h4 class="text">Creators:  &nbsp;</h4>
+                                    <a class="text" href="#"> David Benioff, &nbsp;</a>
+                                    <a class="text" href="#"> David Benioff, &nbsp; </a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                </div>                       
+                                <div class="about__content__text__item">
+                                    <h4 class="text">Cast: &nbsp;</h4>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                </div>
+                                <div class="about__content__text__item">
+                                    <h4 class="text">Genres: &nbsp;</h4>
+                                    <a class="text" href="#">David Benioff, &nbsp; </a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                </div>
+                                <div class="about__content__text__item">
+                                    <h4 class="text">This show is: &nbsp;</h4>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                </div>
+                                <div class="about__content__text__item">
+                                    <h4 class="text">Maturity rating:</h4>
+                                    <button class="button--18">18</button>
+                                    <span class="text">extreme violence, drugs, sensitive themes  &nbsp;</span>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                    <a class="text" href="#">David Benioff, &nbsp;</a>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>        
+    </div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

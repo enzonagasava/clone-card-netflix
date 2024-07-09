@@ -1,0 +1,158 @@
+@use 'variaveis';
+
+.hero {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+
+    &__content{
+        display: block;
+        position: relative;
+
+
+
+        &--banner{
+            background-image: linear-gradient(0deg, #181818, transparent 50%);
+            
+            &-img{
+                -webkit-mask-image: linear-gradient(to top, transparent 2%, black 50%);
+
+                @media (max-width:768px){
+                    background-size:contain;
+                    width: 100%;
+                }
+        
+            }
+        }
+
+
+        .button--circle{
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            padding: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border-color: hsla(0,0%,100%,.5);
+            background-color: rgba(42,42,42,.6);
+            width: 38px;
+            height: 38px;
+            margin: 4px;
+
+
+            &--audio{
+                color: white;
+                border: 1px solid rgba(255, 255, 255, 0.7);
+                padding: 6px;
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+                border-color: hsla(0,0%,100%,.5);
+                background-color: rgba(42,42,42,.6);
+                max-width: 38px;
+                width: 100%;
+                max-height: 38px;
+                height: 100%;
+                margin: 4px;
+                left: 38em;
+                position: relative;
+
+                @media (max-width:768px){
+                    left:7em;
+                }
+
+            }
+        }
+        
+
+        &__item{
+            bottom: 13%;
+            left: 3em;
+            position:absolute;
+
+            @media (max-width:768px){
+                left: .5em;
+                width: 200px;
+            }
+    
+
+
+            &__img{
+                display: none;
+            }
+
+            img{
+                max-width: 340px;
+                width: 100%; 
+                margin-bottom: 24px;  
+            }
+
+            &__button{
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+
+                &__buttons{
+
+                    display: flex;
+
+                    .button{
+                        display: flex;
+                        background-color: variaveis.$corDeTextoPrimaria;
+                        color: variaveis.$corDeFundo;
+                        padding: 8px 0;
+                        align-items: center;
+                        padding-left: 20px;
+                        padding-right: 24px;
+                        border: none;
+                        border-radius: 4px;
+                        font-weight: 500;
+                        max-height: 42px;
+                        margin: 4px;
+
+                        @media (max-width:768px){
+                            padding: 0 ;
+                        }
+
+                    }    
+                }
+
+                
+            }    
+        }
+
+    }
+}
+
+.bar {
+    display:block;
+
+    &__content{
+        display: flex;
+        align-items: center;
+
+        &__progress{
+    
+            display: block;
+            height: 2px;
+            background-color: hsla(0,0%,100%,.3);
+            margin: .5em;
+            position: relative;
+            flex-grow: 1;
+    
+            &__text{
+                font-size: 16px;
+                color: hsla(0,0%,100%,.7);
+                font-weight: 500;
+            }
+            
+        }
+    
+    }
+
+}
+
+

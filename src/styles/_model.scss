@@ -1,0 +1,121 @@
+.model {
+    max-width: 100%;
+    position: relative;
+    color: #fff;
+
+    &__content{
+        display: flex;
+        padding: 0 3em;
+        justify-content: space-between;
+
+        @media (max-width:768px){
+            padding: 0 1em;
+            display: block;
+        }
+
+
+        &__subtitle{
+            display: block;
+            max-width: 480px;
+            width: 100%;
+
+            &--official{
+                font-size: 20px;
+                font-weight: 500;
+
+                @media (max-width:768px){
+                    font-size: 14px;
+                }
+
+            }
+
+            &__18{
+            margin-top: 1px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+
+
+            span{
+                margin-left:  8px;
+                font-weight: 300;
+            }
+            }
+
+            &__title{
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                    font-size: 20px; 
+
+                @media (max-width:768px){
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        &__link{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            width: 240px;
+
+            @media (max-width:768px){
+                width: 100%;
+                font-size: 12px;
+            }
+
+
+            span{
+                color: #777;
+            }
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+            &__item{
+                margin: 7px 7px 7px 0;
+                line-height: 20px;
+            }
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+        }
+    
+        &__text{
+            font-size: 16px;
+            color:#bcbcbc;
+            font-weight: 300;
+            margin-right: 8px;
+
+            @media (max-width:768px){
+                font-size: 12px;
+            }
+
+
+            &--button{
+                border: 1px solid  hsla(0, 0%, 100%, .4);
+                font-size: .7em;
+                border-radius: 3px;
+                padding: 0 .5em;
+                color:  hsla(0, 0%, 100%, .9);
+                margin-right: .715em;
+            }
+        }
+    }
+}
+
+.button{
+    &--18{
+        background-color: #000;
+        color: white;
+        font-size: 16px;
+        padding: 3px;
+        border: 1px solid #000;
+        align-items: center;
+    }
+}

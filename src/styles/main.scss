@@ -1,0 +1,122 @@
+@use 'hero';
+@use 'variaveis';
+@use 'model';
+@use 'selector';
+@use 'sugest';
+@use 'about';
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assets/NetflixSans-Light.otf);
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assets/NetflixSans-Medium.otf);
+    font-weight:500;
+}
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assets/NetflixSans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: NetflixSans;
+    src: url(../../assets/NetflixSans-Bold.otf);
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: NetflixSans, sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    position:inherit;
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+
+
+
+
+
+    &__card{
+        background-color:#181818;    
+        overflow-y: scroll;
+        max-height: 100vh;
+        scrollbar-width: thin;
+        scrollbar-color: #000;
+    }
+
+
+    @media (max-width:768px){
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+.background {
+    background-image: url(../../src/images/background-netflix.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+    max-height: 3470px;
+    height: 100%;
+}
+
+@mixin text($fontSize:14px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corDeTextoPrimaria;
+}
+
+@mixin title($fontSize:24px){
+    @include text($fontSize);
+    color: variaveis.$corDeTextoPrimaria;
+}
+
+.title{
+    @include title;
+}
+
+.text{
+    @include text;
+}
+
+.text--normal{
+    @include text(16px)
+}
+
+.text--regular{
+    @include text(18px)
+}
+
+.text--big{
+    @include text(20px)
+}
+
+.button--circle{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-color: hsla(0,0%,100%,.5);
+    background-color: rgba(42,42,42,.6);
+    width: 38px;
+    height: 38px;
+    margin: 4px;
+
+}

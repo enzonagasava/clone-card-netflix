@@ -1,0 +1,176 @@
+.sugest{
+    padding: 0 3em;
+
+    @media (max-width:768px){
+        padding: 0 1em;
+    }
+
+    &__arrow{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 6em;
+        margin-top: -6em;
+        border-bottom: 2px solid #404040;
+        background-image: linear-gradient(0deg, #181818 0, hsla(0, 0%, 9%, .7) 20%, hsla(0, 0%, 9%, .4) 30%, transparent 50%);
+
+        #svg{
+            position: absolute;
+            color: #fff;
+            opacity: .5;
+            background-color:rgba(42,42,42,.6);
+            border-radius: 50%;
+            bottom: 0px;
+            transform: translateY(50%);
+            
+            &:hover{
+                opacity: .9;
+                cursor: pointer;
+            }
+        }
+    
+    }
+
+    &__header{
+        h2{
+            color: #fff;
+            margin-top: 43px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+        padding-bottom: 96px;
+        height: 1020px;
+        overflow: hidden;
+
+        @media (max-width:768px){
+            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+
+        &__item{
+            width: 237px;
+            border-radius: 5px;
+            background-color: #2f2f2f;
+            
+
+            &__hidden{
+
+                &--open{
+                        height: auto;
+    
+
+                }
+            }
+
+            &--img{
+                img{
+                    width: 237px;
+                    background-size: contain;
+                }
+            }
+
+
+            &__card{
+                width: 237px;
+                bottom: 10px;
+                position: relative;
+
+                &--text{
+                    color:#d2d2d2;
+                    padding: 0 14px 14px 14px;
+
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                    }
+                }
+
+                &--icon{
+                    padding: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &-maturity{
+                        display: flex;
+                        align-items: center;
+                        &-a16{
+                            color: #fff;
+                            margin-right: 8px;
+                            background-color: red;
+                            border-radius: 3px;
+                            padding: 6px 2px;
+                            font-size: 16px;    
+                        }
+                    }
+
+                    &-add{
+                        display: flex;
+                        justify-self: end;
+                    }
+
+                    li{
+                        list-style: none;
+                        display: flex;
+                        color: #fff;
+                        
+                        span{
+                            font-weight: 300;
+                            color: #bcbcbc;
+                        }
+
+                        p{
+                            margin-right: 8px;
+                            border: 1px solid hsla(0, 0%, 100%, .4);
+                            border-radius: 3px;
+                            color: hsla(0, 0%, 100%, .9);
+                            font-size: 12px;
+                            padding: 0 7px;
+                            display: flex;
+                            align-items: center;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.svgUp{
+    position: absolute;
+    color: #fff;
+    opacity: .5;
+    background-color:rgba(42,42,42,.6);
+    border-radius: 50%;
+    bottom: 0px;
+    transform: translateY(50%);
+    display: none;
+
+    &--click{
+        display: flex;
+    }
+}
+
+.svg {
+    position: absolute;
+    color: #fff;
+    opacity: .5;
+    background-color:rgba(42,42,42,.6);
+    border-radius: 50%;
+    bottom: 0px;
+    transform: translateY(50%);
+
+    &--click{
+        display:none ;
+    }
+}
